@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body class="container">
     <header class="header">
         <ul class="header-list">
             
-            <li class="header-element list">list</li>
-            <li class="header-element magnifier"><img>mag</li>
-            <li class="header-element genre">SPACE AND COSMOS</li>
-            <li class="header-element title">The New York Times</li>
-            <button class="subscribe">SUBSCRIBE NOW</button>
+            <li class="header-element fa fa-list"></li>
+            <li id="g" class="header-element fa fa-search exp"></li>
+            <li class="header-element genre exp">SPACE & COSMOS</li>
+            <li class="header-element title"><img src="images/title.png"></img></li>
+            <button class="subscribe exp">SUBSCRIBE NOW</button>
             <button class="login">LOG IN</button>
         </ul>
     </header>
@@ -24,24 +29,26 @@
             <h1 class="title">Space Ripples Reveal Big Bang's
                 <br> Smoking Gun</h1>
             <ul class="icon-list">
-                <li class="icon facebook"></li>
-                <li class="icon whatsapp"></li>
-                <li class="icon twitter"></li>
-                <li class="icon email"></li>
-                <li class="icon reply"></li>
-                <li class="icon bookmark"></li>
-                <li class="icon reply"></li>
+                <li class="icon fa fa-facebook"></li>
+                <li class="icon fa fa-whatsapp"></li>
+                <li class="icon fa fa-twitter"></li>
+                <li class="icon fa fa-envelope"></li>
+                <li class="icon fa fa-reply"></li>
+                <li class="icon fa fa-bookmark"></li>
+                <li class="icon fa fa-comments"></li>
             </ul>
         </div>
-        <img class="photo" src="" alt="Man with telescope"></img>
-        <figcaption class="fig-caption">
-            <span class="caption">Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.</span>
-            <span class="credit">Rick Friedman for The New York Times</span>
-        </figcaption>
-        <div class="author">
-            <em>By Dennis Overbye</em>
+        <img class="photo" src="images/telescope.png" alt="Man with telescope"></img>
+        <div class="figcaption">
+            <figcaption class="fig-caption">
+                <span class="caption">Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.</span>
+                <span class="credit">Rick Friedman for The New York Times</span>
+            </figcaption>
         </div>
-        <time>March 17, 2014</time>
+        <p class="text author">
+            <em>By Dennis Overbye</em>
+        </p>
+        <p class="text"><time>March 17, 2014</time></p>
         <p class="text">CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.</p>
         <p class="text">He was trying to understand why there was no trace of some exotic particles that should have been created in the Big Bang. Instead he discovered what might have made the universe bang to begin with. A potential hitch in the presumed course of cosmic evolution could have infused space itself with a special energy that exerted a repulsive force, causing the universe to swell faster than the speed of light for a prodigiously violent instant.</p>
         <p class="text">If true, the rapid engorgement would solve paradoxes like why the heavens look uniform from pole to pole and not like a jagged, warped mess. The enormous ballooning would iron out all the wrinkles and irregularities. Those particles were not missing, but would be diluted beyond detection, like spit in the ocean.</p>
@@ -50,12 +57,12 @@
         <p class="text">Reaching back across 13.8 billion years to the first sliver of cosmic time with telescopes at the South Pole, a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in the fabric of space-time — so-called gravitational waves — the signature of a universe being wrenched violently apart when it was roughly a trillionth of a trillionth of a trillionth of a second old. They are the long-sought smoking-gun evidence of inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth was correct.</p>
         <div class="tip tip-left">
             <div class="tip-title"><em>Editor's Pick</em></div>
-            <img src="" alt="" class="thumb"></img>
-            <a href="#" class="tip-link">They Tested Their $600,000 Budget on the Lower East Side. Which Option Would You Choose? </a>
-            <img src="" alt="" class="thumb"></img>
-            <a href="#" class="tip-link">Darwin’s Dim View of the Second Sex</a>
-            <img src="" alt="" class="thumb"></img>
-            <a href="#" class="tip-link">In Canada, Americans Are Missed, With Limits</a>
+            <img src="images/couple.png" alt="" class="thumb t1"></img>
+            <div><a href="#" class="tip-link l1">They Tested Their $600,000 Budget on the Lower East Side. Which Option Would You Choose? </a></div>
+            <img src="images/darwin.png" alt="" class="thumb t2"></img>
+            <div><a href="#" class="tip-link l2">Darwin’s Dim View of the Second Sex</a></div>
+            <img src="images/house.png" alt="" class="thumb t3"></img>
+            <div><a href="#" class="tip-link l3">In Canada, Americans Are Missed, With Limits</a></div>
 
         </div>
         <p class="text">Inflation has been the workhorse of cosmology for 35 years, though many, including Dr. Guth, wondered whether it could ever be proved.</p>
@@ -67,7 +74,7 @@
         <p class="text">He continued, “This is a signal from the very earliest universe, sending a telegram encoded in gravitational waves.”</p>
         <p class="text">The ripples manifested themselves as faint spiral patterns in a bath of microwave radiation that permeates space and preserves a picture of the universe when it was 380,000 years old and as hot as the surface of the sun.</p>
         <p class="text">Dr. Kovac and his collaborators, working in an experiment known as Bicep, for Background Imaging of Cosmic Extragalactic Polarization, reported their results in a scientific briefing at the Center for Astrophysics here on Monday and in a set of papers submitted to The Astrophysical Journal.</p>
-        <img src="" class="photo" alt="theory of inflation"></img>
+        <img src="images/figure.png" class="photo" alt="theory of inflation"></img>
         <p class="text">Dr. Kovac said the chance that the results were a fluke was only one in 10 million.</p>
         <p class="text">Dr. Guth, now 67, pronounced himself “bowled over,” saying he had not expected such a definite confirmation in his lifetime.</p>
         <p class="text">“With nature, you have to be lucky,” he said. “Apparently we have been lucky.”</p>
@@ -75,7 +82,9 @@
         <p class="text">“It was a very special moment, and one we took very seriously as scientists,” said Dr. Kovac, who chose his words as carefully as he tended his radio telescopes.</p>
         <p class="text">Andrei Linde of Stanford, a prolific theorist who first described the most popular variant of inflation, known as chaotic inflation, in 1983, was about to go on vacation in the Caribbean last week when Chao-Lin Kuo, a Stanford colleague and a member of Dr. Kovac’s team, <a class="inline-link">knocked on his door with a bottle of Champagne</a> to tell him the news.</p>
         <iframe width="600" height="358" src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            <figcaption class="video-caption">Stanford Professor Andrei Linde celebrates physics breakthrough<span class="credit">Video by Stanford University</span></figcaption>
+            <div class="figcaption">
+                <figcaption class="video-caption">Stanford Professor Andrei Linde celebrates physics breakthrough<span class="credit">Video by Stanford University</span></figcaption>
+            </div>
         </iframe>
         <p class="text">Confused, Dr. Linde called out to his wife, asking if she had ordered anything.</p>
         <p class="text">“And then I told him that in the beginning we thought that this was a delivery but we did not think that we ordered anything, but I simply forgot that actually I did order it, 30 years ago,” Dr. Linde wrote in an email.</p>
@@ -91,8 +100,10 @@
         <p class="text">Gravity waves are the latest and deepest secret yet pried out of the cosmic microwaves, which were discovered accidentally by Arno Penzias and Robert Wilson at Bell Labs 50 years ago. They won the Nobel Prize.</p>
         <p class="text">Dr. Kovac has spent his career trying to read the secrets of these waves. He is one of four leaders of Bicep, which has operated a series of increasingly sensitive radio telescopes at the South Pole, where the thin, dry air creates ideal observing conditions. The others are Clement Pryke of the University of Minnesota, Jamie Bock of the California Institute of Technology and Dr. Kuo of Stanford.</p>
         <p class="text">“The South Pole is the closest you can get to space and still be on the ground,” Dr. Kovac said. He has been there 23 times, he said, wintering over in 1994. “I’ve been hooked ever since,” he said.</p>
-        <img class="photo" src="#" alt="photo of bicep2 telescope">
-        <figcaption>The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature of a universe being wrenched violently apart at its birth.<span class="credit">Steffen Richter/Associated Press</span></figcaption>
+        <img class="photo" src="images/bicep2.png" alt="photo of bicep2 telescope">
+        <div class="figcaption">
+            <figcaption>The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature of a universe being wrenched violently apart at its birth.<span class="credit">Steffen Richter/Associated Press</span></figcaption>
+        </div>
         <p class="text">In 2002, he was part of a team that discovered that the microwave radiation was polarized, meaning the light waves had a slight preference to vibrate in one direction rather than another.</p>
         <p class="text">This was a step toward the ultimate goal of detecting the gravitational waves from inflation. Such waves, squeezing space in one direction and stretching it in another as they go by, would twist the direction of polarization of the microwaves, theorists said. As a result, maps of the polarization in the sky should have little arrows going in spirals.</p>
         <p class="text">Detecting those spirals required measuring infinitesimally small differences in the temperature of the microwaves. The group’s telescope, Bicep2, is basically a giant superconducting thermometer.</p>
@@ -116,19 +127,24 @@
         <div class="text comment-menu">
             <button>READ 615 COMMENTS</button>
             <ul>
-                <li class="icon facebook"></li>
-                <li class="icon whatsapp"></li>
-                <li class="icon twitter"></li>
-                <li class="icon email"></li>
-                <li class="icon reply"></li>
+                <li class="icon fa fa-facebook"></li>
+                <li class="icon fa fa-whatsapp"></li>
+                <li class="icon fa fa-twitter"></li>
+                <li class="icon fa fa-envelope"></li>
+                <li class="icon fa fa-reply"></li>
             </ul>
         </div>
+    </div>
+        <!-- The content links at the end of the article -->
         <div class="suggested-content">
-            <div class="suggested-newsletters">
-                <div class="suggestions-title">Suggested newsletters for you</div>>
+            <div class="suggestions-title t1">Suggested newsletters for you </div>
+            <div class="suggested-newsletters stile">
+               
                 <div class="suggested-tile">
                     <img src="images/circles.png" alt="breaking news">
-                    <div class="plus">+</div>
+                    <div class="plus">
+                        <div></div>	
+                    </div>
                     <div class="suggested-tile-title">AS NEEDED</div>
                     <div class="suggested-tile-sub">Breaking News</div>
                     <p class="suggested-tile-content">Alerts when important news breaks around the world.</p>
@@ -136,7 +152,7 @@
                 </div>
                 <div class="suggested-tile">
                     <img src="images/weekly.png" alt="weekly">
-                    <div class="plus">+</div>
+                    <div class="plus"><div></div></div>
                     <div class="suggested-tile-title">WEEKLY</div>
                     <div class="suggested-tile-sub">At Home</div>
                     <p class="suggested-tile-content">Our best suggestions for how to live a full and cultured life during the pandemic, at home.</p>
@@ -144,15 +160,17 @@
                 </div>
                 <div class="suggested-tile">
                     <img src="images/morning.png" alt="the morning">
-                    <div class="plus">+</div>
+                    <div class="plus"><div></div></div>
                     <div class="suggested-tile-title">DAILY</div>
                     <div class="suggested-tile-sub">The Morning</div>
                     <p class="suggested-tile-content">Make sense of the day's news and ideas. David Leonhardt and Times journalists guide you through what's happening - and why it matters.</p>
                     <div class="see-the-latest">See the latest</div>
                 </div>
             </div>
-            <div class="most-popular">
-                <div class="suggestions-title">Most Popular</div>
+            <!-- sidebar of popular links -->
+           
+            <div class="suggestions-title t2">Most Popular</div>
+            <div class="most-popular popular">
                 <div class="popular-link">Springsteen Faces Drunken Driving Charges in New Jersey</div>
                 <div class="popular-link">‘There’s Nothing Left’: Why Thousands of Republicans Are Leaving the Party</div>
                 <div class="popular-link">3 People Stranded on Uninhabited Island Are Rescued After 33 Days</div>
@@ -164,12 +182,180 @@
                 <div class="popular-link">College Student’s Simple Invention Helps Nurses Work and Patients Rest</div>
                 <div class="popular-link">Mark Cuban Says He Told Mavericks to Stop Playing Anthem</div>
             </div>
-            <div class="space-and-astronomy"></div>
+            <!-- Lower grid of related content links -->
+            <div class="suggestions-title t3">More in Space and Astronomy</div>
+            <div class="space-and-astronomy spce">
+                <div class="tile">
+                    <img src="images/mars.png" alt="mars">
+                    <figcaption class="tile-caption">Christopher Pike/Reuters</figcaption>
+                    <div class="tile-link">Mars Mission From the U.A.E. Begins Orbit of Red Planet</div>
+                    <time class="tile-time">Feb. 9</time>
+                </div>
+                <div class="tile">
+                    <img src="images/mars-uae.png" alt="mars uae">
+                    <figcaption class="tile-caption">China National Space Administration, via Reuters</figcaption>
+                    <div class="tile-link">China's Mars Mission Begins Orbit of the Red Planet</div>
+                    <time class="tile-time">Feb. 10</time>
+                </div>
+                <div class="tile">
+                    <img src="images/venus.png" alt="mars">
+                    <figcaption class="tile-caption">PLANET-C Project Team/JAXA</figcaption>
+                    <div class="tile-link">Life on Venus? The Picture Gets Cloudier</div>
+                    <time class="tile-time">Feb. 8</time>
+                </div>
+                <div class="tile">
+                    <img src="images/webb.png" alt="mars">
+                    <figcaption class="tile-caption">Chris Gunn/NASA</figcaption>
+                    <div class="tile-link">The Webb Telescope, NASA's Golden Surfer, Is Almost Ready, Again</div>
+                    <time class="tile-time">Feb. 3</time>
+                </div>
+                <div class="tile">
+                    <img src="images/bezos.png" alt="mars">
+                    <figcaption class="tile-caption">Nick Cote for The New York Times</figcaption>
+                    <div class="tile-link">Jeff Bezos Renews Focus on Blue Origin, Which Has Been Slower to Launch</div>
+                    <time class="tile-time">Feb. 9</time>
+                </div>
+                <div class="tile">
+                    <img src="images/spacex.png" alt="mars">
+                    <figcaption class="tile-caption">Joel Kowsky/NASA</figcaption>
+                    <div class="tile-link">To Get on This SpaceX Flight, You Don't Have to Be Rich, Just Lucky</div>
+                    <time class="tile-time">Feb. 10</time>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer-text">Access more of The Times by creating a free account or logging in</div>
-        <div class="footer button">EXPAND   <span class="expand-carrot"><em>^</em></span></div>
+    
+        <!-- Nav table below all content -->
+        <nav class="bottom-nav">
+            <div class="nytimes title"><img src="images/title.png"></div>
+            <div class="home-page-link">Go to Home Page »</div>
+            <ul class="footer-list"><em>NEWS</em>
+                <li class="foot-element">Home Page</li>
+                <li class="foot-element">World</li>
+                <li class="foot-element">Coronavirus</li>
+                <li class="foot-element">U.S.</li>
+                <li class="foot-element">Politics</li>
+                <li class="foot-element">Election Results</li>
+                <li class="foot-element">New York</li>
+                <li class="foot-element">Business</li>
+                <li class="foot-element">Tech</li>
+                <li class="foot-element">Science</li>
+                <li class="foot-element">Sports</li>
+                <li class="foot-element">Obituaries</li>
+                <li class="foot-element">Today's Paper</li>
+                <li class="foot-element">Corrections</li>
+            </ul>
+            <ul class="footer-list"><em>OPINION</em>
+                <li class="foot-element">Today's Opinion</li>
+                <li class="foot-element">Op-Ed Columnists</li>
+                <li class="foot-element">Editorials</li>
+                <li class="foot-element">Op-Ed Contributors</li>
+                <li class="foot-element">Letters</li>
+                <li class="foot-element">Sunday Review</li>
+                <li class="foot-element">Video: Opinion</li>
+            </ul>
+            <ul class="footer-list"><em>ARTS</em>
+                <li class="foot-element">Today's Arts</li>
+                <li class="foot-element">Art & Design</li>
+                <li class="foot-element">Books</li>
+                <li class="foot-element">Dance</li>
+                <li class="foot-element">Movies</li>
+                <li class="foot-element">Pop Culture</li>
+                <li class="foot-element">Television</li>
+                <li class="foot-element">Theatre</li>
+                <li class="foot-element">Video: Arts</li>
+                
+            </ul>
+            <ul class="footer-list"><em>LIVING</em>
+                <li class="foot-element">At Home</li>
+                <li class="foot-element">Automobiles</li>
+                <li class="foot-element">Games</li>
+                <li class="foot-element">Education</li>
+                <li class="foot-element">Food</li>
+                <li class="foot-element">Health</li>
+                <li class="foot-element">Jobs</li>
+
+                <li class="foot-element">Love</li>
+                <li class="foot-element">Magazine</li>
+                <li class="foot-element">Parenting</li>
+                <li class="foot-element">Real Estate</li>
+                <li class="foot-element">Recipes</li>
+                <li class="foot-element">Style</li>
+                <li class="foot-element">T Magazine</li>
+                <li class="foot-element">Travel</li>
+            </ul>
+            <ul class="footer-list"><em>MORE</em>
+                <li class="foot-element">Reader Center</li>
+                <li class="foot-element">Wirecutter</li>
+                <li class="foot-element">Live Events</li>
+                <li class="foot-element">The Learning Network</li>
+                <li class="foot-element">Tools & Services</li>
+                <li class="foot-element">Multimedia</li>
+                <li class="foot-element">Photography</li>
+                <li class="foot-element">Video</li>
+                <li class="foot-element">Newsletters</li>
+                <li class="foot-element">TimesMachine</li>
+                <li class="foot-element">NYT Store</li>
+                <li class="foot-element">Times Journeys</li>
+                <li class="foot-element">Manage My Account</li>
+            </ul>
+            <ul id="sub" class="footer-list sub"><em>SUBSCRIBE</em>
+                <li class="foot-element subelement "><img src="images/home.png">Home Delivery</li>
+                <li class="foot-element subelement"><img src="images/digital.png">Digital Subscriptions</li>
+                <li class="foot-element subelement"><img src="images/games.png">Games</li>
+                <li class="foot-element subelement"><img src="images/cooking.png">Cooking</li>
+
+                <li class="foot-element small">Email Newsletters</li>
+                <li class="foot-element small">Corporate Subscriptions</li>
+                <li class="foot-element small">Education Rate</li>
+                <li class="foot-element small border-top">Mobile Applications</li>
+                <li class="foot-element small">Replica Edition</li> 
+                <li class="foot-element small">International</li> 
+                <li class="foot-element small">Español</li>
+                <li class="foot-element small">中文网</li>
+
+            </ul>
+
+        </nav>
+        <!-- Copyright, contact, etc footer -->
+        <footer class="main-footer">
+            <div class="copyright"></div>
+        </footer>
+    
+
+    <!-- popup subscribe footer -->
+    <footer class="subscribe sub-footer">
+        <div class="footer-text">Access more of The Times by creating a free account or logging in. </div>
+        <div id="footerButton" class="footer button">EXPAND  <i class="fa fa-angle-up"></i></div>
+        <img src="images/hidden.png" class="hide">
     </footer>
 </body>
+
+
+<script>
+    //footer popup
+    let footerButton = document.querySelector("#footerButton");
+    footerButton.addEventListener("click", show)
+    function show() {
+        let footer = document.querySelector('.sub-footer');
+        footer.classList.toggle("show");
+        toggleText();
+    }
+
+    function toggleText(){
+        if (footerButton.textContent == 'EXPAND  '){
+            footerButton.innerHTML = 'COLLAPSE  <i class="fa fa-angle-down"></i>';
+        } else {
+            footerButton.innerHTML = 'EXPAND  <i class="fa fa-angle-up"></i>';
+        }
+    }
+
+    //menu at bottom in mobile phones
+    let listElements = document.querySelectorAll(".footer-list");
+    listElements.forEach((node) => {
+        node.addEventListener("click", showMyBabies)
+    })
+    function showMyBabies({currentTarget}) {
+        currentTarget.classList.toggle('show')
+    }
+</script>
 </html>
