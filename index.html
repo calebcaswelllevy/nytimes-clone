@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body class="container">
+    <!-- Header -->
     <header class="header">
         <ul class="header-list">
             
@@ -24,6 +25,7 @@
             <button class="login">LOG IN</button>
         </ul>
     </header>
+    <!-- Main article -->
     <div class="main-content">
         <div class="title-grid">
             <h1 class="title">Space Ripples Reveal Big Bang's
@@ -332,7 +334,7 @@
 
 
 <script>
-    //footer popup
+    //footer popup- toggles visibility of link and text of button
     let footerButton = document.querySelector("#footerButton");
     footerButton.addEventListener("click", show)
     function show() {
@@ -341,6 +343,7 @@
         toggleText();
     }
 
+    //funtion to toggle text of footer button
     function toggleText(){
         if (footerButton.textContent == 'EXPAND  '){
             footerButton.innerHTML = 'COLLAPSE  <i class="fa fa-angle-down"></i>';
@@ -349,11 +352,12 @@
         }
     }
 
-    //menu at bottom in mobile phones
+    //create menu dropdown at bottom in mobile phones
     let listElements = document.querySelectorAll(".footer-list");
     listElements.forEach((node) => {
         node.addEventListener("click", showMyBabies)
     })
+    //function to show child elements of each category in the list of links:
     function showMyBabies({currentTarget}) {
         currentTarget.classList.toggle('show')
     }

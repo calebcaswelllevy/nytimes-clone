@@ -186,7 +186,7 @@ iframe {
     display:inline;
 }
 
-/* Tip */
+/* Tip (inset tiles displayed on the side of the article)*/
 .tip {
     grid-column: -2 / -1;
     grid-row-end: span 3;
@@ -288,7 +288,7 @@ footer .hide {
     cursor: pointer;
 }
 
-/* Suggested content */
+/* Suggested content at the end of the article (lots of tiles and footer)*/
 .suggested-content {
  
     grid-column:1 / -1;
@@ -308,7 +308,7 @@ footer .hide {
    
 }
 
-/* Layout */
+/* Layout of end of article tiles*/
 .t1 {
     grid-area: t1;
 }
@@ -338,7 +338,7 @@ footer .hide {
     font-weight: bold;
     font-size: 1.1em;
 }
-/* Tiles Stile */
+/* Tiles Stile (tiles at end of article) */
 .suggested-newsletters {
     width: 100%;
     display:grid;
