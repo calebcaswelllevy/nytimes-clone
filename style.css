@@ -441,7 +441,7 @@ footer .hide {
 .space-and-astronomy {
     display:grid; 
     justify-content: center;
-    grid-template-columns: repeat(3, minmax(200px, 350px));
+    grid-template-columns: repeat(3, minmax(100px, 350px));
     grid-gap:20px;
     
 }
@@ -585,7 +585,7 @@ li.subelement {
     }
 
     .suggested-newsletters {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-auto-flow: row;
     }
 
@@ -605,6 +605,17 @@ li.subelement {
 
 }
     @media (max-width:800px) {
+        html {
+            font-size: .95em;
+        }
+        .title {
+            margin-left:20px;
+            margin-right:20px;
+        }
+        .title img {
+           width:100%;
+           height:100%;
+        }
         .main-content {
             grid-column: 1 / -1;
             min-width: 300px;
@@ -652,4 +663,33 @@ li.subelement {
             grid-column: 1 / -1;
             justify-items:center;
         }
+    }
+
+    @media (max-width:500px) {
+        html {
+            font-size: .85em;
+        }
+        /* Get space suggestions into one row, or don't show*/
+        .main-content {
+            min-width: none;
+        }
+        .suggested-content {
+        grid-template-columns:  auto;
+        margin:0;
+        }
+        .space-and-astronomy {
+            grid-template-columns:  minmax(200px, 350px);
+        }
+        .tile img {
+            width:90%;
+        }
+        .suggested-newsletters {
+            justify-self: center;
+            padding:1px;
+            grid-column-start: 1;
+        }
+        footer {
+            display: none;
+        }
+        /* Widen list to full width */
     }
